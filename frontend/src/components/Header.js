@@ -36,7 +36,7 @@ const Header = () => {
                 </Heading>
             </Link>
 
-            {/* Hamburger Menu */}
+            {/* Hamburger Menu  Items option*/}
             <Box
             display={{ base: 'block', md: 'none' }}
             onClick={() => setShow(!show)}
