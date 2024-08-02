@@ -1,13 +1,22 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import HomeScreen from "./screens/HomeScreen";
+import { Flex } from "@chakra-ui/react";
 
 const App = () => {
  return (
  <div>
     <Header />
-    <div style={{height: '200px'}}>
-<h1> </h1>
-    </div>
+    <Flex 
+      as='main'
+      mt='72px'
+      direction='column'
+      py='6'
+      px='6'
+      bgColor='gray.200'
+    >
+      <HomeScreen />
+    </Flex>
     <Footer />
   </div>
   )
