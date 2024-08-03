@@ -1,9 +1,11 @@
 import { Icon, Link } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 
 const HeaderMenuItem = ({url, icon, children}) => {
     return (
-        <Link
-        href={url}
+        <Link 
+        as={RouterLink}
+        to={url}
         fontSize='sm'
         fontWeight='semibold'
         letterSpacing='uppercase'
